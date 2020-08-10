@@ -15,9 +15,9 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 //Serve up static assets (usually on heroku)
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 //Api routes will go here
 app.use(routes);
@@ -34,9 +34,9 @@ mongoose.connect(
 );
 
 //Send every other request to the React app
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-// });
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "index.html"));
