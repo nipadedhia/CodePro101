@@ -9,8 +9,6 @@ function Login() {
       <div className="container">
         <div className="row">
           <div className="col m6 s12 col-logo-signup">
-            {/* <img src={require("./logo.svg")} alt="" /> */}
-
             {/* <h3>
               <Link className="back-home-link" to={"/"}>
                 <i class="fas fa-long-arrow-alt-left pr-2"></i>Home
