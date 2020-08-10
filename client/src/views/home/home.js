@@ -8,7 +8,7 @@ import Api from "../../Utils/API";
 function Home() {
   const [products, setProducts] = useState([]);
 
-  // when the page loads a call is made to the db to display all the plants
+  // when the page loads a call is made to the db to display all the courses
   useEffect(() => {
     Api.getAllProducts().then((res) => {
       setProducts(res.data);
