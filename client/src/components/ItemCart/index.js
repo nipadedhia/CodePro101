@@ -24,12 +24,12 @@ function ItemCart(props) {
                     {" "}
                     <span class="card-title">
                       {" "}
-                      <h6>{item.name}</h6>
+                      <h5>{item.name}</h5>
                     </span>
                   </div>
                   <div className="col s6">
                     {" "}
-                    <p>${item.price}</p>
+                    <h5>${item.price}</h5>
                   </div>
                 </div>
 
