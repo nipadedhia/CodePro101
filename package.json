@@ -33,7 +33,9 @@
     "formik": "^2.1.4",
     "if-env": "^1.0.4",
     "mongoose": "^5.9.15",
+    "materialize": "^1.0.0",
     "react-router-dom": "^5.1.2",
+    "react-materialize": "^3.9.2",
     "stripe": "^8.67.0",
     "yup": "^0.29.1"
   }
