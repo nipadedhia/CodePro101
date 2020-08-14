@@ -6,7 +6,7 @@ function ItemCart(props) {
   return (
     <div className="item-cart">
       {props.items.map((item) => (
-        <div class="card small blue-grey lighten-2">
+        <div className="card small blue-grey lighten-2">
           <div className="row ">
             <div className="col m6 m3">
               <div className="">
@@ -22,7 +22,7 @@ function ItemCart(props) {
                 <div className="row">
                   <div className="col s6">
                     {" "}
-                    <span class="card-title">
+                    <span className="card-title">
                       {" "}
                       <h5>{item.name}</h5>
                     </span>
