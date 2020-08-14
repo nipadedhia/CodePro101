@@ -1,11 +1,13 @@
 import React, { useState, useContext } from "react";
 import API from "../../Utils/API";
 import { CartContext } from "../../CartContex";
+import { ToastContainer, toast } from "react-toastify";
 
 function CourseCard(props) {
   const [cart, setCart] = useContext(CartContext);
   const [added, setAdd] = useState(false);
-  const [selected, setSelect] = useState(0);
+  // const [selected, setSelect] = useState(0);
+  const [setSelect] = useState(0);
 
   function handleChange(event) {
     console.log(event);
@@ -37,6 +39,14 @@ function CourseCard(props) {
       setCart([...cart, productData]);
     }
   }
+  // Toaster message function
+  const notify = () => toast("Success!!!!");
+
+  function handleCartBtnClick(item) {
+    addToCart(item);
+    notify();
+    console.log("Button worked!!");
+  }
 
   return (
     <div className=" container course-card-container " id="products">
@@ -48,12 +58,10 @@ function CourseCard(props) {
         </div>
         <div className="row">
           {props.products.map((item) => (
-            <div
-              className="col s12 m4
-      ">
+            <div key={item._id} className="col s12 m4">
               <div className="card medium" style={{ width: "16rem" }}>
                 <img
-                  key={item._id}
+                  // key={item._id}
                   className="card-image responsive-img section"
                   src={item.image}
                   alt="Course"
@@ -68,9 +76,10 @@ function CourseCard(props) {
                       <div className="col">
                         <button
                           className="waves-effect waves-light btn-large center-align"
-                          onClick={() => addToCart(item)}>
+                          // onClick={() => addToCart(item) && notify()}>
+                          onClick={() => handleCartBtnClick(item)}>
                           {" "}
-                          <i class="material-icons left">add</i>
+                          <i className="material-icons left">add</i>
                           Add to Cart
                         </button>
                       </div>
