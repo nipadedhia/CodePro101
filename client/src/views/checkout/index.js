@@ -41,7 +41,7 @@ function Checkout() {
       setTotalPlusMaterial(0);
       return;
     } else {
-      let material = 100;
+      let material = 5.5;
       let reducer = (a, b) => a + b;
 
       setTotal(prices.reduce(reducer));
