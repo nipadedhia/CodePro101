@@ -39,8 +39,7 @@ function Nav({ sticky }) {
                 className="nav-link right hide-on-med-and-down padding-right: 5px"
                 to="/cart">
                 {" "}
-                <i className="fas fa-shopping-bag padding-left: 5px"></i>My cart{" "}
-                <span className="cart-size">( {cart.length} )</span>
+                My cart <span className="cart-size">( {cart.length} )</span>
               </Link>
             </li>
           </ul>
