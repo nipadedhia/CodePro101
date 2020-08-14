@@ -41,13 +41,13 @@ const LoginComponent = ({ history }) => {
   return (
     <div className="container-login container">
       <div className="row mb-5">
-        <div className="col s12 m6 l3 text-center">
+        <div className="col s12 m8 l8 text-center">
           <h1 className="mt-5">Login</h1>
           <Link to="/signup">Need an account?</Link>
         </div>
       </div>
       <div className="row">
-        <div className="col s12 m6 l3">
+        <div className="col s12 m8 l8">
           <Formik
             initialValues={{ email: "", password: "" }}
             validationSchema={LoginSchema}>
