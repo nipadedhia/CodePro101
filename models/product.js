@@ -14,7 +14,7 @@ Product.create(
     name: "HTML",
     price: 300,
     image:
-      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1594929480/CodePro/HTML_dnevok.png",
+      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1597505942/CodePro/html5-512_yzegtf.webp",
   },
   {
     name: "CSS",
@@ -26,7 +26,7 @@ Product.create(
     name: "JavaScript",
     price: 500,
     image:
-      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1594929482/CodePro/JavaScript_ouobw0.png",
+      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1597506386/CodePro/javascript1_humybu.jpg",
   },
   {
     name: "JQuery",
@@ -38,7 +38,7 @@ Product.create(
     name: "nodeJS",
     price: 400,
     image:
-      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1594929481/CodePro/nodeJS_zohauy.jpg",
+      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1597509041/CodePro/nodeJS2_igujhr.jpg",
   },
   {
     name: "ReactJS",
@@ -50,7 +50,7 @@ Product.create(
     name: "mongoDB",
     price: 500,
     image:
-      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1594929482/CodePro/mongoDB_jnraqp.jpg",
+      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1597507319/CodePro/mongoDB1_sxrsyg.jpg",
   },
   {
     name: "Angular",
@@ -62,7 +62,7 @@ Product.create(
     name: "Java",
     price: 1000,
     image:
-      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1594929480/CodePro/Java_kjvej0.jpg",
+      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1597507671/CodePro/Java_ls81ca.jpg",
   },
 
   Product.db.dropCollection("products", function (err, result) {
