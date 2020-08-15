@@ -13,4 +13,12 @@ export default {
   updateCart: function (id, productData) {
     return axios.put(`/api/cart/${id}/`, productData);
   },
+  getCart: function () {
+    return axios.get(`/api/cart/`);
+  },
+
+  //Stripe Test Api
 };
+// Publishable Stripe APi
+let key =
+  "pk_test_51HGURZGzoftg3io4VGUKJVzorfK9YjVlhvB27PnfjkCvS27xzsOTWnBoOFzrxppVqFCz5HUUOifCq0uSqA6LGF0R00iTxD8krG";
