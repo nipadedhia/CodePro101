@@ -41,14 +41,14 @@ function Checkout() {
       setTotalPlusMaterial(0);
       return;
     } else {
-      let material = 5.5;
+      let material = 5;
       let reducer = (a, b) => a + b;
 
       setTotal(prices.reduce(reducer));
 
       let result = prices.reduce(reducer);
 
-      let materialResult = Math.round(result * material);
+      let materialResult = Math.round(result * material) / 100;
       setMaterial(materialResult);
 
       setTotalPlusMaterial(materialResult + result);
