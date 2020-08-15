@@ -32,7 +32,7 @@ Product.create(
     name: "JQuery",
     price: 300,
     image:
-      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1594929481/CodePro/JQuery_e6r24f.png",
+      "https://res.cloudinary.com/dbiqi3f0h/image/upload/v1597509847/CodePro/JQuery_olaij2.png",
   },
   {
     name: "nodeJS",
