@@ -17,6 +17,9 @@ function Nav({ sticky }) {
           <Link className="brand logo" to={"/"}>
             CodePro
           </Link>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
 
           <ul className="right hide-on-med-and-down">
             {!currentUser ? (
@@ -45,6 +48,15 @@ function Nav({ sticky }) {
           </ul>
         </div>
       </div>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <a href="/signup">Sign in</a>
+        </li>
+        <li>
+          <a href="/cart">My Cart</a>
+        </li>
+      </ul>
     </nav>
   );
 }
