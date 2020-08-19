@@ -8,8 +8,7 @@ import app from "../../firebase";
 
 function Nav({ sticky }) {
   const { currentUser } = useContext(AuthContext);
-  // const [cart, setCart] = useContext(CartContext);
-  const [cart] = useContext(CartContext);
+  const [cart, setCart] = useContext(CartContext);
 
   return (
     <nav className="navbar nav-wrapper">
