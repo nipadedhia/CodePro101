@@ -8,7 +8,8 @@ import app from "../../firebase";
 
 function Nav({ sticky }) {
   const { currentUser } = useContext(AuthContext);
-  const [cart, setCart] = useContext(CartContext);
+  // const [cart, setCart] = useContext(CartContext);
+  const [cart] = useContext(CartContext);
 
   return (
     <nav className="navbar nav-wrapper">
@@ -17,7 +18,7 @@ function Nav({ sticky }) {
           <Link className="brand logo" to={"/"}>
             CodePro
           </Link>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <a href="#products" data-target="mobile-demo" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
 
