@@ -1,3 +1,33 @@
+![CodePro_HomePg](https://user-images.githubusercontent.com/60456593/90839533-59e5a380-e31d-11ea-96ea-89b0f5b67133.png)
+
+## Description:
+
+CodePro is a marketplace for online training where anyone can buy a course to learn various coding skills at their own pace.
+CodePro is a great tool for those looking for a way to learn to code or improve skills while having the luxury of staying at home. Whether sharpening skills or seeking a new career, CodePro provides all the necessary resources to help you reach your goal.
+
+## Technologies Used :
+
+- MongoDB
+- Express
+- React
+- Node.js
+- Materialize
+- Firebase
+
+## MVP:
+
+- Users can sign in and out
+- Users can add and remove items to/from their carts
+- Users can see the total price of their shopping cart
+
+## Future Development:
+
+- Set up real time Payment Model
+- Polished UI
+- Provide a Search Bar to find courses quickly
+- Add links on each card that provides a course description
+- Add other pages like Contact page, social Media, FAQ’s, Etc.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
